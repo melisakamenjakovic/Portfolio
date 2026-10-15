@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="A collection of my projects, experiments and creative work.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">yourname<span>.</span></a>
+
+            <button class="menu-toggle"
+                    aria-label="Open navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="nav-contact">Get in touch ↗</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero / Introduction -->
+        <section class="hero section" id="home">
+            <div class="hero-topline">
+                <span class="eyebrow">PORTFOLIO · 2026</span>
+                <span class="availability">
+                    <span class="status-dot"></span>
+                    Building things & learning
+                </span>
+            </div>
+
+            <h1>
+                A little bit of<br>
+                <span class="serif-accent">everything.</span>
+            </h1>
+
+            <div class="hero-bottom">
+                <p class="hero-description">
+                    Hi, I'm <strong>Your Name</strong> — a curious mind
+                    interested in technology, design and the things
+                    we can create when they come together.
+                </p>
+
+                <a href="#work" class="text-link">
+                    Explore my work <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-decoration" aria-hidden="true">
+                <span>IDEAS</span>
+                <span>IN</span>
+                <span>PROGRESS</span>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section class="work-section section" id="work">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">A SELECTION OF MY WORK</span>
+                    <h2>Things I've made<span class="accent">.</span></h2>
+                </div>
+
+                <p class="section-note">
+                    Different interests, different approaches.
+                    All a work in progress.
+                </p>
+            </div>
+
+            <!-- Project filters -->
+            <div class="filters" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all">All work</button>
+                <button class="filter-btn" data-filter="web">Web development</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+            </div>
+
+            <!-- Project grid -->
+            <div class="project-grid">
+
+                <!-- Project 01 -->
+                <article class="project-card" data-category="web">
+                    <a href="#" class="project-link"
+                       aria-label="View project: Personal portfolio">
+
+                        <div class="project-visual visual-portfolio">
+                            <span class="visual-label">01 / WEB</span>
+                            <div class="mini-browser">
+                                <div class="browser-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+                                <div class="browser-content">
+                                    <span class="mini-line"></span>
+                                    <span class="mini-title">Hello,<br>world.</span>
+                                    <span class="mini-button">Explore ↗</span>
+                                </div>
+                            </div>
+                            <span class="visual-index">01</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <h3>Personal Portfolio</h3>
+                                <p>A little corner of the internet to call my own.</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </a>
+
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </article>
+
+
+                <!-- Project 02 -->
+                <article class="project-card" data-category="creative">
+                    <a href="#" class="project-link"
+                       aria-label="View project: Creative experiments">
+
+                        <div class="project-visual visual-creative">
+                            <span class="visual-label">02 / DESIGN</span>
+                            <div class="creative-art">
+                                <span class="art-circle"></span>
+                                <span class="art-square"></span>
+                                <span class="art-type">play<br>around.</span>
+                                <span class="art-star">✳</span>
+                            </div>
+                            <span class="visual-index">02</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <h3>Creative Experiments</h3>
+                                <p>Visual ideas, illustrations and things in between.</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </a>
+
+                    <div class="project-tags">
+                        <span>Illustration</span><span>Design</span>
+                    </div>
+                </article>
+
+
+                <!-- Project 03 -->
+                <article class="project-card" data-category="engineering">
+                    <a href="#" class="project-link"
+                       aria-label="View project: Engineering project">
+
+                        <div class="project-visual visual-engineering">
+                            <span class="visual-label">03 / ENGINEERING</span>
+                            <div class="engineering-art">
+                                <div class="orbit orbit-one"></div>
+                                <div class="orbit orbit-two"></div>
+                                <div class="orbit orbit-three"></div>
+                                <span class="orbit-center">+</span>
+                            </div>
+                            <span class="visual-index">03</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div>
+                                <h3>Engineering Project</h3>
+                                <p>Exploring how things work, one idea at a time.</p>
+                            </div>
+                            <span class="project-arrow">↗</span>
+                        </div>
+                    </a>
+
+                    <div class="project-tags">
+                        <span>Problem solving</span><span>Research</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="projects-footnote">
+                More projects, experiments and unfinished ideas to come.
+            </p>
+        </section>
+
+
+        <!-- About -->
+        <section class="about-section section" id="about">
+            <div class="about-label">
+                <span class="eyebrow">A LITTLE ABOUT ME</span>
+                <span class="about-symbol">↘</span>
+            </div>
+
+            <div class="about-content">
+                <h2>
+                    Curious by nature.<br>
+                    <span class="serif-accent">A maker by choice.</span>
+                </h2>
+
+                <div class="about-text">
+                    <p>
+                        I'm someone who enjoys learning new things,
+                        exploring different disciplines and turning
+                        ideas into something tangible.
+                    </p>
+
+                    <p>
+                        Whether it's writing code, working on a creative
+                        project or figuring out a problem, I like the
+                        process just as much as the result.
+                    </p>
+
+                    <p>
+                        This website is a growing collection of the
+                        things I make, the things I learn and the
+                        ideas I want to explore next.
+                    </p>
+
+                    <div class="interests">
+                        <span>Technology</span>
+                        <span>Design</span>
+                        <span>Engineering</span>
+                        <span>Creative projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-section section" id="contact">
+            <span class="eyebrow">HAVE SOMETHING IN MIND?</span>
+
+            <h2>Let's make<br><span class="serif-accent">something happen.</span></h2>
+
+            <p>
+                Have a question, an idea or just want to say hello?
+                My inbox is open.
+            </p>
+
+            <a class="contact-button" href="mailto:your.email@example.com">
+                Get in touch <span>↗</span>
+            </a>
+
+            <div class="contact-decoration" aria-hidden="true">✳</div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <a href="#home" class="logo">yourname<span>.</span></a>
+
+        <p>Made with curiosity and a little bit of caffeine.</p>
+
+        <div class="footer-links">
+            <a href="https://github.com/YOUR-USERNAME"
+               target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="mailto:your.email@example.com">Email ↗</a>
+        </div>
+
+        <span class="copyright">
+            © <span id="year">2026</span> Your Name
+        </span>
+    </footer>
+
+</body>
+</html>
